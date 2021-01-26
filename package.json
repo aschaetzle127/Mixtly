@@ -1,38 +1,38 @@
 {
-  "name": "project-3",
-  "version": "1.0.0",
-  "description": "App designed to make finding your next favorite as easy as a few taps away.",
-  "main": "server.js",
-  "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "seed": "node scripts/seedDB.js",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
-  },
-  "author": "Alexis Schaetzle, Brandon Burrus, Fiore Cheyenne, Juan Palomino",
-  "license": "GPL",
-  "devDependencies": {
-    "concurrently": "^4.1.1",
-    "nodemon": "^1.19.1"
-  },
-  "dependencies": {
-    "@types/jest": "^24.0.15",
-    "@types/node": "^12.0.12",
-    "@types/react": "^16.8.23",
-    "@types/react-dom": "^16.8.4",
-    "apollo-server-express": "^2.6.7",
-    "bcrypt": "^3.0.6",
-    "dotenv": "^8.0.0",
-    "express": "^4.17.1",
-    "graphql": "^14.4.1",
-    "if-env": "^1.0.4",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.6.2",
-    "passport": "^0.4.0",
-    "typescript": "^3.5.2"
-  }
+    "name": "project-3",
+    "author": "Alexis Schaetzle, Brandon Burrus, Fiore Cheyenne, Juan Palomino",
+    "version": "1.0.0",
+    "description": "App designed to make finding your next favorite as easy as a few taps away.",
+    "main": "server.js",
+    "scripts": {
+        "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+        "start:prod": "node server.js",
+        "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+        "client": "cd client && npm run start",
+        "seed": "node scripts/seedDB.js",
+        "install": "cd client && npm install",
+        "build": "cd client && npm run build",
+        "heroku-postbuild": "npm run build"
+    },
+    "license": "GPL",
+    "devDependencies": {
+        "concurrently": "^4.1.1",
+        "nodemon": "^1.19.1"
+    },
+    "dependencies": {
+        "@types/jest": "^24.0.15",
+        "@types/node": "^12.0.12",
+        "@types/react": "^16.8.23",
+        "@types/react-dom": "^16.8.4",
+        "apollo-server-express": "^2.6.7",
+        "bcrypt": "^3.0.6",
+        "dotenv": "^8.0.0",
+        "express": "^4.17.1",
+        "graphql": "^14.4.1",
+        "if-env": "^1.0.4",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.6.2",
+        "passport": "^0.4.0",
+        "typescript": "^3.5.2"
+    }
 }
